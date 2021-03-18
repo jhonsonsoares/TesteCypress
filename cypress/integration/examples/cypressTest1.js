@@ -12,7 +12,7 @@ context('Actions', () => {
         //Verify number of items present under the Widget Tab
         cy.get(':nth-child(4) > .element-list > .menu-list > li').should('have.length',9);
 
-        cy.writeFile('C:/temp/teste.txt', 'testando');
+        cy.writeFile('C:/temp/teste.txt', 'testando', {flag: 'a+'});
     })
   })
   
